@@ -7,7 +7,8 @@
     "build": "babel src --out-dir dist",
     "start": "npm run build && node dist/server.js",
     "start:dev": "babel-node src/server.js",
-    "test:integration": "NODE_ENV=test mocha --opts test/integration/mocha.opts test/integration/**/*_spec.js"
+    "test:integration": "NODE_ENV=test mocha --opts test/integration/mocha.opts test/integration/**/*_spec.js",
+    "test:unit": "NODE_ENV=test mocha --opts test/integration/mocha.opts test/unit/**/*_spec.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "@babel/preset-env": "^7.19.3",
     "chai": "^4.3.6",
     "mocha": "^6.2.3",
+    "sinon": "^7.5.0",
     "supertest": "^4.0.2"
   },
   "dependencies": {
