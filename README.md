@@ -6,6 +6,8 @@
 - Nodejs
 - MongoDB
 - Docker
+- TDD
+- BDD
 
 
 <h3> :rocket: &nbsp;Tecnologias utilizadas </h3>
