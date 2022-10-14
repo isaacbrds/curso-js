@@ -7,7 +7,10 @@
 - MongoDB
 - Docker
 - TDD
-- BDD
+- BDD 
+
+
+![image](https://user-images.githubusercontent.com/6543465/195951013-19d408c3-680d-404f-b795-57b4520bb355.png)
 
 
 <h3> :rocket: &nbsp;Tecnologias utilizadas </h3>
