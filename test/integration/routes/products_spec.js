@@ -81,4 +81,24 @@ describe('Routes: Products', () => {
       })
     })
   })
+
+  describe("PUT /products/:id", ()=>{
+    context("When editing a product", () =>{
+      it("should update the product and return 200 as status code", done =>{
+        const customProduct = {
+          name: "custom Name"
+        }
+
+        const updateProduct = Object.assign({}, customProduct, defaultProduct)
+
+        request
+          .put(`/products/${defaultId}`)
+          .send(updateProduct)
+          .end((err, res) => {
+            expect(res.status).to.eql(200)
+            done(err)
+          })
+      })
+    })
+  })
 });
