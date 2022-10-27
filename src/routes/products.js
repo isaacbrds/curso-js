@@ -22,4 +22,8 @@ router.put('/:id', (req, res) => {
 });
 
 
+router.delete('/:id', (req, res) => {
+  productsController.delete(req, res);
+})
+
 export default router;
