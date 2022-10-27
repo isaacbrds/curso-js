@@ -101,4 +101,17 @@ describe('Routes: Products', () => {
       })
     })
   })
+
+  describe('DELETE /products/:id', () => {
+    context('when deleting a product', ()=>{
+      it ('should delete a product and return 204 as status code', (done) =>{
+        request
+          .delete(`/products/${defaultId}`)
+          .end((err, res)=>{
+            expect(res.statusCode).to.eql(204)
+            done(err)
+          })
+      })
+    })
+  })
 });
